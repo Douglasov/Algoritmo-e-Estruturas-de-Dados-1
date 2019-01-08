@@ -1,0 +1,138 @@
+# depslib dependency file v1.0
+1444880289 source:c:\users\sssssss\desktop\indice remissivo\indice remissivo\main.cpp
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	"programa.h"
+	"pavchave.h"
+	"nlinhas.h"
+
+1444823457 c:\users\sssssss\desktop\indice remissivo\indice remissivo\pavchave.h
+	"nlinhas.h"
+
+1444823148 c:\users\sssssss\desktop\indice remissivo\indice remissivo\nlinhas.h
+
+1444877084 c:\users\sssssss\desktop\indice remissivo\indice remissivo\programa.h
+	"pavchave.h"
+
+1444823822 source:c:\users\sssssss\desktop\indice remissivo\indice remissivo\nlinhas.cpp
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<string.h>
+	"programa.h"
+	"pavchave.h"
+	"nlinhas.h"
+
+1444823822 source:c:\users\sssssss\desktop\indice remissivo\indice remissivo\pavchave.cpp
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<string.h>
+	<locale.h>
+	"pavchave.h"
+	"nlinhas.h"
+	"programa.h"
+
+1444823822 source:f:\eco010\indice remissivo\indice remissivo\pavchave.cpp
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<string.h>
+	<locale.h>
+	"pavchave.h"
+	"nlinhas.h"
+	"programa.h"
+
+1444823457 f:\eco010\indice remissivo\indice remissivo\pavchave.h
+	"nlinhas.h"
+
+1444823457 f:\eco010\indice remissivo\indice remissivo\programa.h
+	"pavchave.h"
+
+1444823148 f:\eco010\indice remissivo\indice remissivo\nlinhas.h
+
+1444823822 source:f:\eco010\indice remissivo\indice remissivo\nlinhas.cpp
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<string.h>
+	"programa.h"
+	"pavchave.h"
+	"nlinhas.h"
+
+1444826005 source:f:\eco010\indice remissivo\indice remissivo\main.cpp
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<string.h>
+	"programa.h"
+	"pavchave.h"
+	"nlinhas.h"
+
+1444823822 source:f:\eco010\indice remissivo\indice remissivo\programa.cpp
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<string.h>
+	"pavchave.h"
+	"nlinhas.h"
+	"programa.h"
+
+1444881553 source:c:\users\sssssss\desktop\indice remissivo\indice remissivo\programa.cpp
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<string.h>
+	"pavchave.h"
+	"nlinhas.h"
+	"programa.h"
+
+1445032276 source:g:\eco010true\indice remissivo\indice remissivo\main.cpp
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	"programa.h"
+	"pavchave.h"
+	"nlinhas.h"
+
+1444877084 g:\eco010true\indice remissivo\indice remissivo\programa.h
+	"pavchave.h"
+
+1444823457 g:\eco010true\indice remissivo\indice remissivo\pavchave.h
+	"nlinhas.h"
+
+1444823148 g:\eco010true\indice remissivo\indice remissivo\nlinhas.h
+
+1445026089 source:g:\eco010true\indice remissivo\indice remissivo\nlinhas.cpp
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<string.h>
+	"programa.h"
+	"pavchave.h"
+	"nlinhas.h"
+
+1445026092 source:g:\eco010true\indice remissivo\indice remissivo\pavchave.cpp
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<string.h>
+	<locale.h>
+	"pavchave.h"
+	"nlinhas.h"
+	"programa.h"
+
+1445031660 source:g:\eco010true\indice remissivo\indice remissivo\programa.cpp
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<string.h>
+	"pavchave.h"
+	"nlinhas.h"
+	"programa.h"
+

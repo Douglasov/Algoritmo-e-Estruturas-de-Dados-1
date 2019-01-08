@@ -13,11 +13,15 @@ public:
     programa();
     ~programa();
 
-    bool conferepalavras (char *nomearq,int numeropav);
+
+    ///****************METODOS DE ORDENAÇÃO************
+    bool conferenpalavras(char *nomearq,int numeropav);
     void inserepalavras(char nomearq[],int numeropav);
     void gravapalavrasarq(char *nomearq);
     void insertionsort();
     void selectionsort();
+    void iniselectionsortrecursivo();
+    void selectionsortrecursivo(int ini);
     void bubblesort();
     void ordenaquicksort();
     int particione(palavra *l,int ini,int fim);
@@ -27,9 +31,6 @@ public:
     void mergeSort(palavra *l, int ini, int fim );
     void iniciatimer();
     void tempexefunc();
-
-
-    ///
 
 };
 

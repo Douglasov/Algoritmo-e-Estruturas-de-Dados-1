@@ -1,13 +1,18 @@
 #include <iostream>
 #include <fstream>
+#include <conio.h>
 #include <stdio.h>
 #include <string.h>
 #include <windows.h>
+#include <time.h>
 #include <stdlib.h>
 #include <direct.h>
-#include <programa.h>
+#include "programa.h"
 
 using namespace std;
+
+
+ ///***************CONSTRUTORES E DESTRUTOR*********
 
 programa::programa()
 {
@@ -20,6 +25,13 @@ programa::~programa()
     delete [] listapav;
 }
 
+
+///****************METODOS DE ORDENA플O************
+
+
+///METODO PARA VERIFICAR SE O NUMERO DE PALAVRAS NO
+///ARQUIVO ESTA DE ACORDO COM O QUE FOI DIGITADO
+///E CHECA A INTEGRIDADE DO ARQUVO DE TEXTO
 bool programa::conferenpalavras(char *nomearq,int numeropav)
 {
     int contapalavras=0;
@@ -51,6 +63,9 @@ bool programa::conferenpalavras(char *nomearq,int numeropav)
     }
 }
 
+
+///CRIA UM VETOR DE PALAVRAS COM AS PALAVRAS "PUXADAS"
+///DO ARQUIVO DE TEXTO PARA QUE POSSA DEPOIS SER ORDENADA
 void programa::inserepalavras(char nomearq[],int numeropav)
 {
     char pav[50];
@@ -89,6 +104,11 @@ void programa::inserepalavras(char nomearq[],int numeropav)
     }
 }
 
+
+///GRAVA NA PASTA "SAIDA" O ARQUIVO DE TEXTO DE NOME DEFINIDO
+///PELO USUARIO COM AS PALAVRAS JA DEVIDAMENTE ORDENADAS
+///CONSIDERANDO QUE AS COM ACENTO FICAM NO FINAL
+///DA ORDENA플O
 void programa::gravapalavrasarq(char *nomearq)
 {
     ofstream ofs;
@@ -110,6 +130,8 @@ void programa::gravapalavrasarq(char *nomearq)
     }
 }
 
+
+///INSERTION SORT
 void programa::insertionsort()
 {
     iniciatimer();
@@ -130,7 +152,7 @@ void programa::insertionsort()
     }
 }
 
-
+///SELECTION SORT
 void programa::selectionsort()
 {
     iniciatimer();
@@ -153,6 +175,38 @@ void programa::selectionsort()
         listapav[menorposicao].setpointpav(aux);
     }
 }
+
+
+///SELECTION SORT RECURSIVO
+void programa::iniselectionsortrecursivo()
+{
+    iniciatimer();
+    selectionsortrecursivo(0);
+}
+
+void programa::selectionsortrecursivo(int ini)
+{
+    int menorposicao;
+    char *aux;
+    if(ini<ult)
+    {
+        menorposicao = ini;
+        for ( int i = ini+1; i < ult; ++i )
+        {
+            if ( strcmp(listapav[i].getpalav(),listapav[menorposicao].getpalav())<=0)
+            {
+                menorposicao = i;
+            }
+        }
+        aux = listapav[ini].getpointpav();
+        listapav[ini].setpointpav(listapav[menorposicao].getpointpav());
+        listapav[menorposicao].setpointpav(aux);
+        selectionsortrecursivo(ini +1);
+    }
+}
+
+
+///BUBBLE SORT
 void programa::bubblesort()
 {
     iniciatimer();
@@ -171,6 +225,9 @@ void programa::bubblesort()
         }
     }
 }
+
+
+///ORDENA플O FINAL DO QUICKSORT
 void programa::ordenaquicksort()
 {
     iniciatimer();
@@ -201,6 +258,8 @@ int programa::particione(palavra *l,int ini,int fim)
     return (i+1);
 
 }
+
+///QUICKSORT
 void programa::quicksort(palavra *l,int ini,int fim)
 {
     int piv;
@@ -212,12 +271,16 @@ void programa::quicksort(palavra *l,int ini,int fim)
     }
 }
 
+
+///ORDENA플O FINAL MERGESORT
 void programa::ordenamergesort()
 {
     iniciatimer();
     mergeSort(listapav,0,ult);
 }
 
+
+///FUN플O INTERCALA DO MERGE
 void programa::intercala(palavra *l, int ini, int mid, int fim )
 {
     int iniinterc=ini, midinterc=mid, k=0;
@@ -259,7 +322,7 @@ void programa::intercala(palavra *l, int ini, int mid, int fim )
     delete [] aux;
 }
 
-
+///MERGE SORT
 void programa::mergeSort(palavra *l, int ini, int fim )
 {
     if ( ini < ( fim - 1 ) )
@@ -271,14 +334,18 @@ void programa::mergeSort(palavra *l, int ini, int fim )
     }
 
 }
+
+///VALOR INICIAL PARA CONTAR O TEMPO
 void programa::iniciatimer()
 {
     iniT = GetTickCount();
 }
+
+///CALCULO FINAL DO TEMPO TRANSCORRIDO DURANTE A ORDENA플O
 void programa::tempexefunc()
 {
     int tempexe;
     fimT = GetTickCount();
     tempexe=((fimT-iniT));
-    cout<<"\nTempo de Ordena豫o: "<<tempexe<<" Milisegundos";
+    cout<<"Tempo de Ordenacao: "<<tempexe<<" Milisegundos"<<endl;
 }

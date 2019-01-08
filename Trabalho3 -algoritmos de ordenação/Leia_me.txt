@@ -1,17 +1,27 @@
+/************EQUIPE*************************
+DOUGLAS VENANCIO SANTOS DE OLIVEIRA - 28614
+KAEL
+MARCELLI MONTEIRO -
+LUAN HENRIQUE FERREIRA - 21832
+********************************************/
 
- /******************************COMO RODAR O ALGORITMO:************************
-    ANTES DE RODAR O PROGRAMA, COPIE OS ARQUIVOS A SEREM ORDENADOS PARA A PASTA
-    DEBUG DO PROJETO.
+/******************************COMO RODAR O ALGORITMO:************************
 
-    ATRAVES DO COMANDO 'cd' ACESSE A PASTA DEBUG DO PROJETO, ONDE O .exe DO PROJETO
-    SE ENCONTRA.
-    AO ENCONTRA-LA RODE A LINHA DE COMANDO NO FORMATO DO EXEMPLO A SEGUIR:
+ ANTES DE RODAR O PROGRAMA, COPIE OS ARQUIVOS A SEREM ORDENADOS PARA A PASTA
+ DEBUG DO PROJETO.
 
-    "Trabalho3 bubblesort  15000 aurelio15000.txt aurelio15000_ordenadoBubble.txt"
-      <Nome       <Nome     <Tamanho>  <arquivo a ser      <arquivo a ser gravado>
-     Projeto>    Metodo>                lido>
+ ATRAVES DO COMANDO 'cd' ACESSE A PASTA DEBUG DO PROJETO, ONDE O .exe DO PROJETO
+SE ENCONTRA.
+AO ENCONTRA-LA RODE A LINHA DE COMANDO NO FORMATO DO EXEMPLO A SEGUIR:
 
-    REPITA ESSE PASSO PARA OS METODOS:
+"Trabalho3 bubblesort  15000     aurelio15000.txt   aurelio15000_ordenadoBubble.txt"
+ <Nome       <Nome     <Tamanho>   <arquivo a ser      <arquivo a ser gravado>
+ Projeto>    Metodo>                 lido>
+
+
+
+
+REPITA ESSE PASSO PARA OS METODOS:
 
 MERGESORT:
 mergesort
@@ -87,112 +97,6 @@ Trabalho3 quicksort 30000 aurelio30000.txt aurelio30000_ordenadoQUICK.txt
 Trabalho3 quicksort 40000 aurelio40000.txt aurelio40000_ordenadoQUICK.txt
 
 
-
-    ******************************************************************************/
-#include <iostream>
-#include <fstream>
-#include <stdio.h>
-#include <string.h>
-#include <windows.h>
-#include <stdlib.h>
-#include <direct.h>
-#include "programa.h"
-
-using namespace std;
+******************************************************************************/
 
 
-int main(int argc,char **argv)
-{
-    programa *prog=new programa();
-
-
-    if(argc == 5)
-    {
-    if(strcmp((argv[1]),"mergesort")==0)
-    {
-        if(prog->conferenpalavras(argv[3],atoi(argv[2])))
-        {
-            prog->inserepalavras(argv[3],atoi(argv[2]));
-            prog->ordenamergesort();
-            prog->tempexefunc();
-            prog->gravapalavrasarq(argv[4]);
-        }
-
-    }
-
-    else if(strcmp((argv[1]),"insertionsort")==0)
-        {
-            if(prog->conferenpalavras(argv[3],atoi(argv[2])))
-            {
-                prog->inserepalavras(argv[3],atoi(argv[2]));
-                prog->insertionsort();
-                prog->tempexefunc();
-                prog->gravapalavrasarq(argv[4]);
-            }
-
-        }
-
-         else if(strcmp((argv[1]),"selectionsortrecur")==0)
-        {
-            if(prog->conferenpalavras(argv[3],atoi(argv[2])))
-            {
-                prog->inserepalavras(argv[3],atoi(argv[2]));
-                prog->iniselectionsortrecursivo();
-                prog->tempexefunc();
-                prog->gravapalavrasarq(argv[4]);
-            }
-
-        }
-
-
-    else if(strcmp((argv[1]),"bubblesort")==0)
-        {
-            if(prog->conferenpalavras(argv[3],atoi(argv[2])))
-            {
-                prog->inserepalavras(argv[3],atoi(argv[2]));
-                prog->bubblesort();
-                prog->tempexefunc();
-                prog->gravapalavrasarq(argv[4]);
-            }
-
-        }
-
-    else if(strcmp((argv[1]),"quicksort")==0)
-        {
-            if(prog->conferenpalavras(argv[3],atoi(argv[2])))
-            {
-                prog->inserepalavras(argv[3],atoi(argv[2]));
-                prog->ordenaquicksort();
-                prog->tempexefunc();
-                prog->gravapalavrasarq(argv[4]);
-            }
-
-        }
-
-    else if(strcmp((argv[1]),"selectionsort")==0)
-        {
-            if(prog->conferenpalavras(argv[3],atoi(argv[2])))
-            {
-                prog->inserepalavras(argv[3],atoi(argv[2]));
-                prog->selectionsort();
-                prog->tempexefunc();
-                prog->gravapalavrasarq(argv[4]);
-
-            }
-
-        }
-    else
-    {
-        cout<<"\n O tipo de ordenação não existe neste programa.\n";
-    }
-
-    }
-    else
-    {
-        cout<<"\n O Comando tem mais ou manos de 4 argumentos.\n";
-    }
-
-    delete prog;
-
-    return 0;
-}

@@ -1,0 +1,42 @@
+# depslib dependency file v1.0
+1448241514 source:c:\users\administrador\desktop\eco010 projetos\trabalho3\main.cpp
+	<iostream>
+	<fstream>
+	<conio.h>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<time.h>
+	<stdlib.h>
+	<direct.h>
+	"programa.h"
+
+1448236972 c:\users\administrador\desktop\eco010 projetos\trabalho3\programa.h
+	"palavra.h"
+
+1448044082 c:\users\administrador\desktop\eco010 projetos\trabalho3\palavra.h
+
+1448236657 source:c:\users\administrador\desktop\eco010 projetos\trabalho3\palavra.cpp
+	<iostream>
+	<fstream>
+	<conio.h>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<time.h>
+	<stdlib.h>
+	<direct.h>
+	"palavra.h"
+
+1448238167 source:c:\users\administrador\desktop\eco010 projetos\trabalho3\programa.cpp
+	<iostream>
+	<fstream>
+	<conio.h>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<time.h>
+	<stdlib.h>
+	<direct.h>
+	"programa.h"
+

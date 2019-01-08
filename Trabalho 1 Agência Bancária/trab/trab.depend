@@ -1,0 +1,57 @@
+# depslib dependency file v1.0
+1442191475 source:c:\users\sssssss\desktop\trab\trab\agencia.cpp
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<string.h>
+	"agencia.h"
+	"contas.h"
+
+1442165630 c:\users\sssssss\desktop\trab\trab\agencia.h
+	"agencia.h"
+	"contas.h"
+
+1442165630 c:\users\sssssss\desktop\trab\trab\contas.h
+	"agencia.h"
+	"contas.h"
+
+1442190361 source:c:\users\sssssss\desktop\trab\trab\contas.cpp
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<string.h>
+	"agencia.h"
+	"contas.h"
+
+1442191475 source:c:\users\sssssss\desktop\trab\trab\main.cpp
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<string.h>
+	"agencia.h"
+	"contas.h"
+
+1442190361 source:c:\users\sssssss\desktop\trabalho pratico\trab\contas.cpp
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<string.h>
+	"agencia.h"
+	"contas.h"
+
+1442165630 c:\users\sssssss\desktop\trabalho pratico\trab\agencia.h
+	"agencia.h"
+	"contas.h"
+
+1442165630 c:\users\sssssss\desktop\trabalho pratico\trab\contas.h
+	"agencia.h"
+	"contas.h"
+
+1442191475 source:c:\users\sssssss\desktop\trabalho pratico\trab\main.cpp
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<string.h>
+	"agencia.h"
+	"contas.h"
+
